@@ -755,6 +755,17 @@ details.abstract[open] > summary {
   font-size: 0.85rem;
 }
 
+/* Credit line. Smaller and quieter than the author, because on this page the
+   author identifies the book and the credit names who made the thing. */
+.book .book-credit {
+  display: block;
+  margin-top: 0.32rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-wrap: pretty;
+}
+
 /* --- Video embeds -------------------------------------------------------- */
 
 .videos {
