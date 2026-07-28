@@ -831,30 +831,6 @@ details.abstract[open] > summary {
   content: none;
 }
 
-/* The URL is spelled out under the title and carries the link, so a reader can
-   see where it goes before clicking. Monospace and underlined so it reads as an
-   address rather than as prose. */
-.resource-url {
-  display: inline-block;
-  margin: 0.1rem 0 1.1rem;
-  font-family: var(--font-mono);
-  font-size: 0.88rem;
-  color: var(--link);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.16em;
-  overflow-wrap: anywhere;
-}
-
-.resource-url::after {
-  content: " \2197";
-  text-decoration: none;
-}
-
-.resource-url:hover {
-  color: var(--link-hover);
-}
-
 .resource-meta {
   flex: 0 0 auto;
   color: var(--muted);
