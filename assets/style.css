@@ -1001,20 +1001,21 @@ details.abstract[open] > summary {
     font-size: 1rem;
   }
 
-  /* Wrap rather than scroll. A horizontal scroll here had no visual cue, so on
-     a 375px phone the last tab was seven pixels off-screen and looked absent.
-     Wrapping keeps every tab reachable at any width. */
+  /* One row, never two, and never a scroller. The tabs drop to their own line
+     below the brand so they get the full width, then type and padding scale
+     with the viewport so all six fit side by side down to a 320px phone. An
+     earlier horizontal scroll here had no visual cue and hid the last tab. */
   .nav-links {
     order: 3;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    gap: 0.15rem 0.1rem;
+    gap: 0.1rem;
   }
 
   .nav-links a {
-    font-size: 0.88rem;
-    padding: 0.3rem 0.45rem;
+    font-size: clamp(0.6rem, 3.05vw, 0.85rem);
+    padding: 0.3rem clamp(0.1rem, 0.8vw, 0.42rem);
   }
 
   .wrap {
