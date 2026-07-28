@@ -25,7 +25,7 @@ step, and at six pages it is cheaper than a generator.
 
 Copy an existing `<li>` inside the relevant `<ol class="pubs">`. Wrap your own name
 in `<span class="me">` so it bolds. The `<details class="abstract">` block is
-optional; leave it out and the entry simply has no abstract toggle.
+optional. Leave it out and the entry simply has no abstract toggle.
 
 ### Replacing the CV
 
@@ -37,7 +37,7 @@ Palette, type scale, and the accent bar under each `h2` are ported from
 `~/teaching/sample-ai-course/assets/yale-site.scss`, so the site reads as one system
 with the Quarto lecture decks. Light-mode values come from `yale-talk.scss`.
 
-Dark is the default, including for visitors whose OS prefers light; only an explicit
+Dark is the default, including for visitors whose OS prefers light. Only an explicit
 click on the toggle overrides it, and that choice persists in `localStorage`. Each
 page repeats a small script in `<head>` that applies the stored theme before first
 paint, which is what keeps a light flash off the screen.
