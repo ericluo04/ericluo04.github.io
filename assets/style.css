@@ -730,6 +730,19 @@ details.abstract[open] > summary {
   margin: 0;
 }
 
+/* Each cover links to the edition it actually shows. The hover lift below was
+   already there and now reads as the click affordance. */
+.book-link {
+  display: block;
+  text-decoration: none;
+  border-radius: var(--radius);
+}
+
+.book-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
 .book img {
   width: 100%;
   aspect-ratio: 2 / 3;
