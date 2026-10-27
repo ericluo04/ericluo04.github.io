@@ -11,7 +11,7 @@
 <meta property="og:description" content="Tools and materials I have built and shared.">
 <meta property="og:url" content="https://www.laneluo.com/resources.html">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="assets/style.css?v=9">
+<link rel="stylesheet" href="assets/style.css?v=10">
 <script>
 (function(){try{var t=localStorage.getItem("theme");
 document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}catch(e){}})();
@@ -57,11 +57,11 @@ document.documentElement.setAttribute("data-theme",t==="light"?"light":"dark");}
           <span class="resource-meta">Open source, MIT</span>
         </div>
 
-        <p>Claude Code is Anthropic&rsquo;s coding agent, and this is the research workflow I have built on top of it. Twenty-one skills cover most of the empirical cycle, from finding and reading papers to auditing a <code>.bib</code> file to assembling a replication archive. Eight of them handle causal inference and natural experiments (difference-in-differences, regression discontinuity, instrumental variables, and conjoint among them), each built on a literature that has actually been read, so a recommendation arrives with the paper that licenses it.</p>
+        <p>This is the set of Claude Code skills I use for my own research. There are 21 of them. They cover things like finding and reading papers, checking a <code>.bib</code> file for wrong or made-up citations, building slide decks, and putting together a replication package. Eight are for causal inference (difference-in-differences, regression discontinuity, instrumental variables, synthetic control, and a few others). Each one is written from the methods literature and cites the papers it draws on.</p>
 
-        <p>It also ships my global <code>CLAUDE.md</code>, a Quarto slide system whose quality gates catch an overflowing slide before you find out at the podium, and a closing section, <em>Things you may not know</em>, on the features that changed how I work day to day, like the agent view for running many sessions at once and hold-to-talk voice input.</p>
+        <p>The repo also has my global <code>CLAUDE.md</code>, a Quarto setup for reveal.js slides with scripts that check for overflow and unreadable text before I present, and a short section on Claude Code features I did not know about for a while (the agent view for running several sessions at once, and voice input).</p>
 
-        <p>Everything there, including the two example decks, was generated with Claude Code as a proof of concept, so verify citations, numbers, and claims before relying on any of it.</p>
+        <p>I built all of it with Claude Code, including the two example decks, as a proof of concept. Check citations and numbers before you rely on anything in it.</p>
 
         <div class="resource-links">
           <a href="https://github.com/ericluo04/claude-academic-workflow" target="_blank" rel="noopener">Repository</a>

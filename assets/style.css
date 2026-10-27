@@ -409,7 +409,7 @@ main > .wrap > h2:first-child {
 
 .hero-photo {
   width: 260px;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--hairline);
